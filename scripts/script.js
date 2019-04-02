@@ -198,6 +198,8 @@ function handlePlayAgainClick(e) {
   letters = currentWord.split("");
   displayedWord = [...letters];
 
+  document.getElementById("category").textContent = categoryName;
+
   for (let i = 0; i < letters.length; i++) {
     displayedWord[i] = "_";
   }
